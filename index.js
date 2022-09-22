@@ -1,7 +1,33 @@
 const farmAnimals = 'cow horse sheep pig chicken';
 
-const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//Question 1 Working Code
+const farmAnimalsSpaced  = farmAnimals.split(" ");
+const [moo, neigh, baa, oink, cluck] = farmAnimalsSpaced;
+        //console.log(moo, neigh, baa, oink, cluck);
 
+//Question 2 Working Code
+const [bessie, , dolly, babe, little] = farmAnimalsSpaced;
+        //console.log(bessie, dolly, babe, little)
+
+//Question 3 Working Code
+const [blackAndWhite, , black, pink, ,] = farmAnimalsSpaced;
+        //console.log(blackAndWhite, black, pink)
+
+//Original Array of Question 4
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+//Question 4 Working Code
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+        //console.log(red, orange, yellow, green, blue, indigo, violet);
+
+//Question 5 Working Code. Color Indigo is Purposefully Excluded
+const [r, o, y, g, b, , v] = colors;
+        //console.log(r, o, y, g, b, v);
+
+//Question 6 Working Code. Color Indigo is Only Included
+const [, , , , , indg, ,] = colors;
+        //console.log(indg);
+
+//Original Object of Question 7
 const muppet = {
   muppetName: 'Miss Piggy',
   color: 'pink',
@@ -9,6 +35,9 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+//Question 7 Working Code
+const {muppetName, color, song, job, partner} = muppet;
+        //console.log(muppetName, color, song, job, partner);
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +53,14 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+//Question 8 Correct Answers
+const {song2, song4} = nestedMuppet.album.theMuppetMovie
+        //console.log(song2, song4);
+const {nestedJob, nestedPartner} = nestedMuppet;
+        //console.log(nestedJob, nestedPartner);
+
+
 
 // Strings
 
